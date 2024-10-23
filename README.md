@@ -1,14 +1,14 @@
 # Matchmaking System
 
-This project implements a matchmaking system for players in a game. The system includes functionalities for players to join a matchmaking queue, creating a competition, and handle players who have been in the queue for too long.
+This project implements a matchmaking system for players in a game. The system includes functionalities for players to join a matchmaking queue, create a competition, and handle players who have been in the queue for too long.
 
 ## Assignment Workflow
 
-The project was started by doing a research into the matchmaking systems in the market and studying on how they have solved the given feature requests. Expecially Google's Open Match has given lots of inspiration, especially the `Director` for working as a sort of organizer.
+The project was started by researching matchmaking systems in the market and studying how they have solved the given feature requests. Google's Open Match provided a lot of inspiration, especially the `Director` for working as a sort of organizer.
 
-Followed up by small amount of rubber duck planning with ChatGPT to build up the concept. The first concept had a bit too wide scope with searchFields, ticket systems etc, which I abandoned shortly after the first iteration. Similarly the main was first lauching a player joiner in a separate goroutine simulation but changed to the current API format after rereading the assignment.
+This was followed by a small amount of rubber duck planning with ChatGPT to build up the concept. The first concept had a bit too wide a scope with search fields, ticket systems, etc., which I abandoned shortly after the first iteration. Similarly, the main was first launching a player joiner in a separate goroutine simulation but changed to the current API format after rereading the assignment.
 
-Copilot was used when ever it gave some useful input, mostly in similar manner as intellisense. It did write most of the quick unit tests.
+Copilot was used whenever it gave some useful input, mostly in a similar manner as IntelliSense. It did write most of the quick unit tests.
 
 ## Features
 
@@ -38,4 +38,3 @@ Copilot was used when ever it gave some useful input, mostly in similar manner a
 - **matchmaker/matchmaker.go**: Contains the `Matchmaker` struct and its methods.
 - **matchmaker/player.go**: Contains the `Player` struct and its methods.
 - **director/director.go**: Contains the `Director` coordinator between matchmaking and other game services.
-
